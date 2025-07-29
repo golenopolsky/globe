@@ -43,6 +43,7 @@ class App {
 
   initControls = () => {
     this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
+    this.controls.enableZoom = false;
   }
 
   initStats = () => {
